@@ -28,7 +28,9 @@
     "apiNG": "*",
     "apiNG-plugin-youtube": "*",
     "apiNG-plugin-instagram": "*",
-    "bootstrap": "~4"
+    "bootstrap": "~4",
+    "angular-timeago": "~0.2.4",
+    "angular-linkify": "~1.2.0"
   },
   "resolutions": {
     "angular": "~1.4.7"

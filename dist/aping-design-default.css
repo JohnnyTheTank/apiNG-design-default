@@ -1,2 +1,29 @@
 /* Vendor Prefixing */
 /* Custom Functions */
+.aping-design-default .card {
+  background-color: white;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  border: none;
+  margin-bottom: 2rem;
+}
+.aping-design-default .card a.aping-picture-link:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0.5) sepia(0.6);
+  filter: grayscale(0.5) sepia(0.6);
+}
+.aping-design-default .card img.card-img-top {
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
+.aping-design-default .card:hover {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+}

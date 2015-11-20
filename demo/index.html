@@ -16,11 +16,13 @@
 
     <script src="../bower_components/apiNG/dist/aping.min.js"></script>
 
-    <script src="../bower_components/angular-youtube-api-factory/dist/angular-youtube-api-factory.min.js"></script>
     <script src="../bower_components/apiNG-plugin-youtube/dist/aping-plugin-youtube.min.js"></script>
-
-    <script src="../bower_components/angular-instagram-api-factory/dist/angular-instagram-api-factory.min.js"></script>
     <script src="../bower_components/apiNG-plugin-instagram/dist/aping-plugin-instagram.min.js"></script>
+    <!--<script src="../bower_components/apiNG-plugin-facebook/dist/aping-plugin-facebook.min.js"></script>-->
+
+    <script src="../bower_components/angular-facebook-api-factory/dist/angular-facebook-api-factory.min.js"></script>
+    <script src="../bower_components/apiNG-plugin-facebook/src/aping-facebook-directive.js"></script>
+    <script src="../bower_components/apiNG-plugin-facebook/src/aping-facebook-helper.js"></script>
 
     <script src="../bower_components/angular-linkify/angular-linkify.min.js"></script>
     <script src="../bower_components/angular-timeago/dist/angular-timeago.min.js"></script>
@@ -34,10 +36,16 @@
 <body ng-app="app">
     <div class="container">
         <br>
+
+        <aping
+                type="social"
+                aping-facebook="[{'page':'heuteshow'}]">
+        </aping>
         <aping
                 type="social"
                 aping-youtube="[{'search':'angularjs'},{'search':'nodejs'}]"
-                aping-instagram="[{'tag':'webdevelopment'}]">
+                aping-instagram="[{'tag':'webdevelopment'}]"
+                aping-facebook="[{'page':'heuteshow'}]">
         </aping>
     </div>
 

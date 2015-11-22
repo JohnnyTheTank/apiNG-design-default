@@ -16,7 +16,6 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
                 case "twitter":
                 case "instagram":
                 case "facebook":
-                    console.log("img/"+_platform+".png");
                     return "img/"+_platform+".png";
             }
 

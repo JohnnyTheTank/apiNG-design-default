@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('jtt_aping_design_default', ['linkify', 'angularMoment'])
+angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment'])
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('de');
     }])
@@ -9,6 +9,20 @@ angular.module('jtt_aping_design_default', ['linkify', 'angularMoment'])
         $scope.$on('resultMerged', function () {
             $scope.workingCopy = $scope.results;
         });
+
+        $scope.getPlatformIcon = function (_platform) {
+            switch (_platform) {
+                case "youtube":
+                case "twitter":
+                case "instagram":
+                case "facebook":
+                    console.log("img/"+_platform+".png");
+                    return "img/"+_platform+".png";
+            }
+
+            return false;
+        }
+
     }])
     .filter('capitalize', function() {
         return function(input, all) {

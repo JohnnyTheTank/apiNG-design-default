@@ -1,19 +1,27 @@
 .aping-design-default {
 
-    .card {
+    .box {
         background-color:white;
+
+        font-family: 'Economica', sans-serif;
 
         @include transition(all 250ms ease);
         @include box-shadow(0 0 5px 0 rgba(0,0,0,0.4));
+        /*
 
         border-radius: 0;
         border:none;
+
+
+
+        */
+
 
         margin-bottom:2rem;
 
         a {
             &.aping-picture-link {
-
+                @include transition(all 250ms ease);
                 &:hover {
                     opacity:1;
                     @include filter(grayscale(0.5) sepia(0.6));
@@ -21,15 +29,36 @@
             }
         }
 
-        img.card-img-top {
+
+        img.main-image {
             border-radius: 0;
             width:100%;
             height:auto;
         }
 
 
+
         &:hover {
             @include box-shadow(0 0 5px 0 rgba(0,0,0,0.8));
+        }
+
+        .box-content {
+            padding:1rem;
+
+            .platform-box {
+
+                margin-left: 10px;
+                margin-bottom:10px;
+
+                img.platform-icon {
+                    @include border-radius(40px);
+                    @include box-shadow(0 0 5px 0 rgba(0,0,0,0.4));
+                }
+            }
+        }
+
+        .box-footer {
+            height:1em;
         }
     }
 }

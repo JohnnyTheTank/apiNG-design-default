@@ -28,6 +28,8 @@
     "apiNG": "*",
     "apiNG-plugin-youtube": "*",
     "apiNG-plugin-instagram": "*",
+    "apiNG-plugin-facebook": "*",
+    "apiNG-plugin-codebird": "*",
     "bootstrap": "~4",
     "angular-linkify": "~1.2.0",
     "angular-moment": "~0.10.3",

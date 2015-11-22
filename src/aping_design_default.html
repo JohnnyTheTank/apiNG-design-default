@@ -12,7 +12,10 @@
 
                 <p class="card-text" ng-if="feed.text" linkify>{{::feed.text | limitTo: 250}}{{::feed.text.length > 350 ? '...' : ''}}</p>
 
-                <p class="card-link text-muted" am-time-ago="{{::feed.timestamp}}"></p>
+                <p class="card-link text-muted">
+                    <span am-time-ago="{{::feed.timestamp}}"></span>
+                    <span>({{::feed.platform | capitalize}})</span>
+                </p>
             </div>
         </div>
     </div>

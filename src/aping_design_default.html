@@ -1,6 +1,6 @@
 <div class="aping-design-default">
     <div masonry class="row" preserve-order ng-controller="apingDefaultDesignController">
-        <div class="masonry-brick col-lg-4 col-sm-6" ng-repeat="feed in results | orderBy: 'timestamp': true" ng-cloak>
+        <div class="masonry-brick col-lg-4 col-sm-6" ng-repeat="feed in workingCopy | orderBy: 'timestamp': true" ng-cloak>
             <div class="box">
                 <div class="box-header">
                     <a ng-href="{{::feed.post_url}}" target="_blank" class="aping-picture-link nohover"><img

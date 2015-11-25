@@ -35,6 +35,7 @@
 }
 .aping-design-default .box .box-content {
   padding: 1rem;
+  overflow: hidden;
 }
 .aping-design-default .box .box-footer {
   height: 1em;

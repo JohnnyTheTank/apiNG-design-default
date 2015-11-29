@@ -10,9 +10,7 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
             $scope.workingCopy = $scope.results;
 
             $timeout(function () {
-                // We need to give Masonry a little jump-start, otherwise the bricks
-                // will render in one big overlapped stack sometimes
-                $scope.$broadcast('masonry.reload');
+                $scope.$broadcast('masonry.full-reload');
             }, 500);
         });
 

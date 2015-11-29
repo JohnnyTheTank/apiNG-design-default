@@ -4,14 +4,10 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('de');
     }])
-    .controller('apingDefaultDesignController', ['$scope', '$timeout', function ($scope, $timeout) {
+    .controller('apingDefaultDesignController', ['$scope', function ($scope) {
 
         $scope.$on('resultMerged', function () {
             $scope.workingCopy = $scope.results;
-
-            $timeout(function () {
-                $scope.$broadcast('masonry.full-reload');
-            }, 500);
         });
 
         $scope.getPlatformIcon = function (_platform) {

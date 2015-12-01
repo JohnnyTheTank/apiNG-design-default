@@ -34,8 +34,8 @@ module.exports = function(grunt) {
         },
         copy: {
             default_template: {
-                src: 'src/aping_design_default.html',
-                dest: 'dist/aping_design_default.html',
+                src: 'src/aping_design_default_social.html',
+                dest: 'dist/aping_design_default_social.html',
             },
         },
         watch: {

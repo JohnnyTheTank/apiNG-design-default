@@ -2,7 +2,7 @@
 
 angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment'])
     .run(['amMoment', function (amMoment) {
-        amMoment.changeLocale('de');
+        amMoment.changeLocale('en');
     }])
     .controller('apingDefaultDesignController', ['$scope', '$timeout', function ($scope, $timeout) {
 

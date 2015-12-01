@@ -1,4 +1,4 @@
-<div class="aping-design-default aping-design-default-social">
+<div class="aping-design-default aping-design-default-image">
     <div ng-controller="apingDefaultDesignController">
         <div data-images-loaded masonry class="row" preserve-order reload-on-show ng-show="workingCopy">
             <div class="masonry-brick col-lg-4 col-sm-6" ng-repeat="feed in workingCopy | orderBy: 'timestamp': true"
@@ -9,14 +9,6 @@
                                 ng-src="{{::feed.img_url}}" class="main-image img-responsive" alt=""></a>
                     </div>
                     <div class="box-content">
-                        <h4 class="" ng-if="feed.caption">{{::feed.caption}}</h4>
-
-                        <div class="" ng-if="feed.text" linkify>
-                            {{::feed.text | limitTo: 250}}{{::feed.text.length > 350 ? '...' : ''}}
-                        </div>
-
-                        <div class="clearfix"><br></div>
-
                         <div class="box-footer text-muted">
                             <div class="pull-left text-left">
                                 <div ng-if="feed.blog_name">
@@ -27,7 +19,7 @@
                             <div class="pull-right platform-box">
                                 <a ng-href="{{::feed.post_url}}" target="_blank" class="platform-link">
                                     <img ng-src="{{getPlatformIcon(feed.platform)}}" alt="{{feed.platform}}"
-                                        title="{{feed.platform}}" class="platform-icon">
+                                         title="{{feed.platform}}" class="platform-icon">
                                 </a>
                             </div>
                         </div>

@@ -43,16 +43,22 @@
 <body ng-app="app">
     <div class="container">
         <br>
-        <h1>Demo page for apiNG-design-default</h1>
-        <br>
-        <h2>Models</h2>
-        <br>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="social.html">Model "social"</a></li>
-            <li class="list-group-item"><a href="image.html">Model "image"</a></li>
-            <li class="list-group-item"><a href="event.html">Model "event"</a></li>
-        </ul>
 
+
+        <h1>Social Feed</h1>
+        <br>
+
+        <aping
+                template-url="../src/aping_design_default_social.html"
+                type="social"
+                items="2"
+                aping-youtube="[{'search':'thomasmüller'}]"
+                aping-instagram="[{'tag':'fcbayern'}]"
+                aping-facebook="[{'page':'namikamusik'}]"
+                aping-codebird="[{'search':'ocean', 'result_type':'popular'}]">
+        </aping>
+
+        <div class="clearfix"></div>
 
     </div>
 

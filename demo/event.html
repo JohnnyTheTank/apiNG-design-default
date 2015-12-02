@@ -41,20 +41,24 @@
 
 </head>
 <body ng-app="app">
-    <div class="container">
-        <br>
-        <h1>Demo page for apiNG-design-default</h1>
-        <br>
-        <h2>Models</h2>
-        <br>
-        <ul class="list-group">
-            <li class="list-group-item"><a href="social.html">Model "social"</a></li>
-            <li class="list-group-item"><a href="image.html">Model "image"</a></li>
-            <li class="list-group-item"><a href="event.html">Model "event"</a></li>
-        </ul>
+<div class="container">
+    <br>
 
+    <h1>Events</h1>
+    <br>
 
-    </div>
+    <aping
+            template-url="../src/aping_design_default_event.html"
+            type="event"
+            items="7"
+            order-by="start_timestamp"
+            order-reverse="true"
+            aping-facebook="[{'page':'frittenbubu'}, {'page':'freundevonniemand'}]">
+    </aping>
+
+    <div class="clearfix"></div>
+
+</div>
 
 
 </body>

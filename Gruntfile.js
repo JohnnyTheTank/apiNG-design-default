@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 }
             },
             options: {
-                banner: '\n/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
+                banner: '\n/*! <%= pkg.name %> v<%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) by <%= pkg.author %> */\n',
             }
         },
         sass: {
@@ -33,9 +33,13 @@ module.exports = function(grunt) {
             }
         },
         copy: {
-            default_template: {
+            social: {
                 src: 'src/aping_design_default_social.html',
                 dest: 'dist/aping_design_default_social.html',
+            },
+            image: {
+                src: 'src/aping_design_default_image.html',
+                dest: 'dist/aping_design_default_image.html',
             },
         },
         watch: {

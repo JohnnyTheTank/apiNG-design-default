@@ -34,9 +34,10 @@
     "angular-linkify": "~1.2.0",
     "angular-moment": "~0.10.3",
     "moment": "~2.10.6",
-    "angular-masonry-packed": "~0.13.0"
+    "angular-masonry-packed": "~0.14.0"
   },
   "resolutions": {
-    "angular": "~1.4.7"
+    "angular": "~1.4.7",
+    "angular-masonry-packed": "~0.14.0"
   }
 }

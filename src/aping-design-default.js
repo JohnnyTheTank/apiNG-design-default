@@ -4,7 +4,7 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('en');
     }])
-    .controller('apingDefaultDesignController', ['$scope', '$timeout', function ($scope, $timeout) {
+    .controller('apingDefaultDesignController', ['$scope', function ($scope) {
 
         $scope.$on('apiNG.resultMerged', function () {
             $scope.workingCopy = $scope.results;
@@ -15,6 +15,7 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
                 case "youtube":
                 case "twitter":
                 case "instagram":
+                case "vimeo":
                 case "facebook":
                     return "img/"+_platform+".png";
             }
@@ -33,10 +34,4 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
             $scope.refresh();
         });
 
-    }])
-    .filter('capitalize', function() {
-        return function(input, all) {
-            var reg = (all) ? /([^\W_]+[^\s-]*) */g : /([^\W_]+[^\s-]*)/;
-            return (!!input) ? input.replace(reg, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
-        }
-    });
+    }]);

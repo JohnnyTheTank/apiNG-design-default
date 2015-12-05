@@ -4,7 +4,7 @@
   "authors": [
     "Jonathan Hornung <jonathan.hornung@gmail.com>"
   ],
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "design for apiNG (default)",
   "main": "dist/aping-design-default.min.js",
   "moduleType": [],
@@ -29,6 +29,7 @@
     "apiNG-plugin-youtube": "*",
     "apiNG-plugin-instagram": "*",
     "apiNG-plugin-facebook": "*",
+    "apiNG-plugin-vimeo": "*",
     "apiNG-plugin-codebird": "*",
     "bootstrap": "~4",
     "angular-linkify": "~1.2.0",
@@ -37,7 +38,7 @@
     "angular-masonry-packed": "~0.14.0"
   },
   "resolutions": {
-    "angular": "~1.4.7",
+    "angular": "~1.4.8",
     "angular-masonry-packed": "~0.14.0"
   }
 }

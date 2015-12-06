@@ -4,7 +4,7 @@
   "authors": [
     "Jonathan Hornung <jonathan.hornung@gmail.com>"
   ],
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "design for apiNG (default)",
   "main": "dist/aping-design-default.min.js",
   "moduleType": [],
@@ -26,12 +26,7 @@
   "dependencies": {
     "jquery": "*",
     "apiNG": "*",
-    "apiNG-plugin-youtube": "*",
-    "apiNG-plugin-instagram": "*",
-    "apiNG-plugin-facebook": "*",
-    "apiNG-plugin-vimeo": "*",
-    "apiNG-plugin-codebird": "*",
-    "bootstrap": "~4",
+    "bootstrap": "*",
     "angular-linkify": "~1.2.0",
     "angular-moment": "~0.10.3",
     "moment": "~2.10.6",

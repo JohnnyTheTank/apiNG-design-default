@@ -6,6 +6,7 @@
 */.sass-cache
 .DS_Store
 /bower_components
+/config.codekit
 Thumbs.db
 *.map
 /**/.DS_Store

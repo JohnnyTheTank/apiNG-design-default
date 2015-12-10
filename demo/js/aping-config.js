@@ -4,7 +4,7 @@ apingApp.config(['$provide', function ($provide) {
 
     $provide.constant("apingApiKeys", {
         youtube : [
-            {'apiKey':'AIzaSyAlCcA8eKCm0qMc2Uo2kO5p8Z8UkEp2Cfc'}
+            {'apiKey':'AIzaSyARYVuV6dho71EMZI6j6-sDEgo8OOnFygM'}
         ],
         instagram: [
             {'access_token':'3283222.a492704.6c2d53acdc3e47e695dff5c89368597d'}

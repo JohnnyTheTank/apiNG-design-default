@@ -18,6 +18,9 @@ apingApp.config(['$provide', function ($provide) {
         vimeo: [
             {'access_token':'1e53b10910c18adf97682d12e01e60d6'}
         ],
+        github: [
+            {'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'}
+        ],
     });
 
     $provide.constant("apingDefaultSettings", {

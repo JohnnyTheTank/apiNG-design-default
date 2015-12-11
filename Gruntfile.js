@@ -45,6 +45,10 @@ module.exports = function(grunt) {
                 src: 'src/aping_design_default_event.html',
                 dest: 'dist/aping_design_default_event.html',
             },
+            repo: {
+                src: 'src/aping_design_default_repo.html',
+                dest: 'dist/aping_design_default_repo.html',
+            },
         },
         watch: {
             minifiyJs: {

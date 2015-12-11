@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>apiNG Default Design Demo</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../dist/aping-design-default.min.css">
+
+    <link href='//fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
+    <!-- JS -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <!-- apiNG -->
+    <script src="../bower_components/apiNG/dist/aping.min.js"></script>
+    <script src="js/aping-config.js"></script>
+
+    <!-- apiNG plugins -->
+    <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-github/master/dist/aping-plugin-github.min.js"></script>
+
+    <!-- apiNG design dependencies -->
+    <script src="../bower_components/angular-masonry-packed/dist/angular-masonry-packed.min.js"></script>
+    <script src="../bower_components/angular-linkify/angular-linkify.min.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/angular-moment/angular-moment.min.js"></script>
+    <script src="../bower_components/moment/locale/de.js"></script>
+
+    <!-- apiNG design -->
+    <script src="../src/aping-design-default.js"></script>
+
+
+    <script src="js/repo_app.js"></script>
+
+</head>
+<body ng-app="app">
+<div class="container">
+    <br>
+    <div class="alert alert-warning" role="alert">Don't forget to setup your github access_token in 'aping_config.js'</div>
+
+    <h1>Repos</h1>
+    <br>
+
+    <aping
+            template-url="../src/aping_design_default_repo.html"
+            model="repo"
+            items="40"
+            max-items="150"
+            order-by="updated_timestamp"
+            order-reverse="false"
+            aping-github="[{'user':'xremix'}, {'user':'JohnnyTheTank'}, {'search':'bootstrap', 'items':10}]">
+    </aping>
+
+    <div class="clearfix"></div>
+
+</div>
+
+
+</body>
+</html>

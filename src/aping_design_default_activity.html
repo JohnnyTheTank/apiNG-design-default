@@ -1,0 +1,34 @@
+<div class="aping-design-default aping-design-default-activity">
+    <div ng-controller="apingDefaultDesignController">
+        <div data-images-loaded masonry class="row" preserve-order reload-on-show ng-show="workingCopy">
+            <div class="masonry-brick col-lg-4 col-sm-6 col-xs-12"
+                 ng-repeat="item in workingCopy | orderBy: 'timestamp': true" ng-cloak>
+                <div class="box">
+                    <div class="box-content">
+
+                        <strong>
+                            <a ng-href="{{::item.actor_url}}" target="_blank">
+                                {{::item.actor_name}}
+                            </a>
+                            {{::item.action_name}}
+
+                            <a ng-href="{{::item.object_url}}" target="_blank">
+                                {{::item.object_name}}
+                            </a>
+                        </strong>
+                        <p ng-if="item.action_message">
+                            {{::item.action_message}}
+                        </p>
+
+
+                        <hr>
+
+                        <span am-time-ago="{{::item.timestamp}}"></span>
+
+                        <pre>{{item | json}}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

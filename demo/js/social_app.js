@@ -6,5 +6,6 @@ var app = angular.module('app', [
     'jtt_aping_codebird',
     'jtt_aping_vimeo',
     'jtt_aping_vine',
+    'jtt_aping_flickr',
     'jtt_aping_design_default'
 ]);

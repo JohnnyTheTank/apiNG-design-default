@@ -31,9 +31,5 @@
     "angular-moment": "~0.10.3",
     "moment": "~2.10.6",
     "angular-masonry-packed": "~0.14.0"
-  },
-  "resolutions": {
-    "angular": "~1.4.8",
-    "angular-masonry-packed": "~0.14.0"
   }
 }

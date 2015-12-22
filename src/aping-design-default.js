@@ -8,7 +8,6 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
 
         $scope.$on('apiNG.resultMerged', function () {
             $scope.workingCopy = $scope.results;
-            console.log($scope.results)
         });
 
         $scope.getPlatformIcon = function (_platform) {

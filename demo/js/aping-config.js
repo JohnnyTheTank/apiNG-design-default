@@ -16,7 +16,8 @@ apingApp.config(['$provide', function ($provide) {
             {'bearer_token':'AAAAAAAAAAAAAAAAAAAAACs3iwAAAAAA%2BH8LdT7YfKIzk8fvQvqKvoePuxo%3DMKfXX2ojtacGL8aOLAhlBDUrEFpy0DUuiyebet22Wa2YVrX7cc'}
         ],
         vimeo: [
-            {'access_token':'1e53b10910c18adf97682d12e01e60d6'}
+            {'access_token':'1e53b10910c18adf97682d12e01e60d6'},
+            {'access_token':'ea345d82cd76223342082f620d42cb72'}
         ],
         github: [
             {'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'}

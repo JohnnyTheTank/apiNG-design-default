@@ -24,10 +24,8 @@
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-youtube/master/dist/aping-plugin-youtube.min.js"></script>
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-instagram/master/dist/aping-plugin-instagram.min.js"></script>
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-facebook/master/dist/aping-plugin-facebook.min.js"></script>
-    <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-codebird/master/dist/aping-plugin-codebird.min.js"></script>
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-vimeo/master/dist/aping-plugin-vimeo.min.js"></script>
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-vine/master/dist/aping-plugin-vine.min.js"></script>
-    <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-flickr/master/dist/aping-plugin-flickr.min.js"></script>
     <script src="//rawgit.com/JohnnyTheTank/apiNG-plugin-dailymotion/master/dist/aping-plugin-dailymotion.min.js"></script>
 
     <!-- apiNG design dependencies -->
@@ -41,7 +39,7 @@
     <script src="../src/aping-design-default.js"></script>
 
 
-    <script src="js/social_app.js"></script>
+    <script src="js/video_app.js"></script>
 
 </head>
 <body ng-app="app">
@@ -51,19 +49,19 @@
         <h1>Social Feed</h1>
         <br>
 
+
+
         <aping
-                template-url="../src/aping_design_default_social.html"
-                model="social"
-                items="3"
-                max-items="20"
-                aping-youtube="[{'search':'thomasmüller', 'items':3}, {'search':'mario götze'}, {'playlistId':'PLzm_lfByuAEF5RTM5j94TLrbbF4a9PBG4'}]"
-                aping-instagram="[{'locationId':'24245', 'items':10}]"
+                template-url="../src/aping_design_default_video.html"
+                model="video"
+                items="2"
+                max-items="15"
+                aping-youtube="[{'search':'thomas müller'}]"
+                aping-instagram="[{'locationId':'24245', 'items':20}]"
                 aping-facebook="[{'page':'namikamusik'}]"
                 aping-vimeo="[{'tag':'soccer'}]"
                 aping-vine="[{'tag':'soccer'}]"
-                aping-flickr="[{'tags':'münchen'}]"
-                aping-dailymotion="[{'tags':'berlin'}]"
-                aping-codebird="[{'search':'angularjs', 'result_type':'popular', 'showAvatar':true}]">
+                aping-dailymotion="[{'tags':'berlin'}]">
         </aping>
 
 

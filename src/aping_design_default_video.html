@@ -1,0 +1,43 @@
+<div class="aping-design-default aping-design-default-video">
+    <div ng-controller="apingDefaultDesignController">
+        <div data-images-loaded masonry class="row" preserve-order reload-on-show ng-show="workingCopy">
+            <div class="masonry-brick col-lg-4 col-sm-6 col-xs-12" ng-repeat="item in workingCopy | orderBy: 'timestamp': true"
+                 ng-if="item.source || item.markup" ng-cloak>
+                <div class="box">
+                    <div ng-if="item.markup" class="video-container">
+                        <div ng-bind-html="getHtml(item.markup)"></div>
+                    </div>
+                    <video ng-if="item.source && !item.markup" width="720" controls>
+                        <source ng-src="{{getUrl(item.source)}}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="box-content">
+                        <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
+
+                        <div class="" ng-if="item.text" linkify>
+                            {{::item.text | limitTo: 250}}{{::item.text.length > 250 ? '...' : ''}}
+                        </div>
+
+                        <div class="clearfix"><br></div>
+
+                        <div class="box-footer text-muted">
+                            <div class="pull-left text-left">
+                                <div ng-if="item.blog_name">
+                                    von <a href="{{::item.blog_link}}" target="_blank">{{::item.blog_name}}</a>
+                                </div>
+                                <div am-time-ago="{{::item.timestamp}}"></div>
+                            </div>
+                            <div class="pull-right platform-box">
+                                <a ng-href="{{::item.post_url}}" target="_blank" class="platform-link">
+                                    <img ng-src="{{getPlatformIcon(item.platform)}}" alt="{{item.platform}}"
+                                         title="{{item.platform}}" class="platform-icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,10 +1,10 @@
 "use strict";
 
-angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment'])
+angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment', 'ngSanitize'])
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('en');
     }])
-    .controller('apingDefaultDesignController', ['$scope', function ($scope) {
+    .controller('apingDefaultDesignController', ['$scope', '$sce', function ($scope, $sce) {
 
         $scope.$on('apiNG.resultMerged', function () {
             $scope.workingCopy = $scope.results;
@@ -36,5 +36,17 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
         $scope.$on('imagesLoaded.ALWAYS', function() {
             $scope.refresh();
         });
+
+        $scope.getUrl = function (url) {
+            if(url) {
+                return $sce.trustAsResourceUrl(url);
+            }
+        };
+
+        $scope.getHtml = function (string) {
+            if(string) {
+                return $sce.trustAsHtml(string);
+            }
+        };
 
     }]);

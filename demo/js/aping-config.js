@@ -20,8 +20,7 @@ apingApp.config(['$provide', function ($provide) {
             {'access_token':'ea345d82cd76223342082f620d42cb72'}
         ],
         github: [
-            //{'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'},
-            {'access_token':'7db084ed381292f40014f52a54a885ad7809b440'}
+            {'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'},
         ],
     });
 

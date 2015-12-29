@@ -19,6 +19,9 @@ apingApp.config(['$provide', function ($provide) {
             {'access_token':'1e53b10910c18adf97682d12e01e60d6'},
             {'access_token':'ea345d82cd76223342082f620d42cb72'}
         ],
+        'tumblr': [
+            {'api_key':'lINWJaOl0lu3ajBn5tdqJgs8IFisHu5GJ8hBYzR41f4BHEl9E6'},
+        ],
         github: [
             {'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'},
         ],

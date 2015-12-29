@@ -20,6 +20,7 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
                 case "facebook":
                 case "flickr":
                 case "dailymotion":
+                case "tumblr":
                     return "img/"+_platform+".png";
             }
 

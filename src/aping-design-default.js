@@ -22,6 +22,7 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
                 case "dailymotion":
                 case "tumblr":
                 case "rss":
+                case "bandsintown":
                     return "img/"+_platform+".png";
             }
 

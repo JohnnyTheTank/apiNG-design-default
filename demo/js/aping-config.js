@@ -22,6 +22,9 @@ apingApp.config(['$provide', function ($provide) {
         'tumblr': [
             {'api_key':'lINWJaOl0lu3ajBn5tdqJgs8IFisHu5GJ8hBYzR41f4BHEl9E6'},
         ],
+        'bandsintown': [
+            {'app_id':'apiNG-default-design-demo'},
+        ],
         github: [
             {'access_token':'<YOUR_GITHUB_ACCESS_TOKEN>'},
         ],

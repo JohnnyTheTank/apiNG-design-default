@@ -4,7 +4,7 @@
   "authors": [
     "Jonathan Hornung <jonathan.hornung@gmail.com>"
   ],
-  "version": "0.4.2",
+  "version": "0.4.4",
   "description": "design for apiNG (default)",
   "main": "dist/aping-design-default.min.js",
   "moduleType": [],
@@ -27,9 +27,9 @@
     "jquery": "*",
     "apiNG": "*",
     "bootstrap": "*",
-    "angular-linkify": "~1.2.0",
-    "angular-moment": "~0.10.3",
-    "moment": "~2.10.6",
-    "angular-masonry-packed": "~0.14.0"
+    "angular-linkify": "^1.2.0",
+    "angular-moment": "^0.10.3",
+    "moment": "^2.10.6",
+    "angular-masonry-packed": "^0.14.0"
   }
 }

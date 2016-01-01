@@ -4,7 +4,7 @@
   "authors": [
     "Jonathan Hornung <jonathan.hornung@gmail.com>"
   ],
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "design for apiNG (default)",
   "main": "dist/aping-design-default.min.js",
   "moduleType": [],
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "*",
+    "angular-sanitize": "*",
     "apiNG": "*",
     "bootstrap": "*",
     "angular-linkify": "^1.2.0",

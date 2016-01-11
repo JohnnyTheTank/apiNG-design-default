@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment', 'ngSanitize'])
+angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment', 'ngSanitize', 'jtt_imagesLoaded'])
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('en');
     }])

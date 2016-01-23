@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment', 'ngSanitize', 'jtt_imagesLoaded'])
+angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMoment', 'ngSanitize'])
     .run(['amMoment', function (amMoment) {
         amMoment.changeLocale('en');
     }])
@@ -51,5 +51,4 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
                 return $sce.trustAsHtml(string);
             }
         };
-
     }]);

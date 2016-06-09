@@ -14,7 +14,6 @@ angular.module('jtt_aping_design_default', ['wu.masonry', 'linkify', 'angularMom
             switch (_platform) {
                 case "youtube":
                 case "twitter":
-                case "instagram":
                 case "vimeo":
                 case "vine":
                 case "facebook":

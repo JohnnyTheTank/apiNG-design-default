@@ -4,7 +4,7 @@
   "authors": [
     "Jonathan Hornung <jonathan.hornung@gmail.com>"
   ],
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "design for apiNG (default)",
   "main": "dist/aping-design-default.min.js",
   "moduleType": [],
@@ -31,5 +31,8 @@
     "angular-moment": "^0.10.3",
     "moment": "^2.10.6",
     "angular-masonry-packed": "^0.14.0"
+  },
+  "resolutions": {
+    "angular": "1.5.0"
   }
 }
